@@ -1,2 +1,2 @@
 # PageBank
-A PageRanking AI bot intended to be a self Scraping Search Engine for Trading 
+A PageRanking AI bot intended to be a self scraping search engine for trading 
