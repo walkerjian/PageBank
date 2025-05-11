@@ -1,14 +1,14 @@
+import os
 import openai
 
-openai.api_key = "sk-..."  # Replace with your actual key or use an environment variable
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def summarize_text(text):
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
+    response = client.chat.completions.create(
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful summarizer."},
             {"role": "user", "content": f"Summarize this:\n{text}"}
         ]
     )
-    return response['choices'][0]['message']['content']
-
+    return response.choices[0].message.content
