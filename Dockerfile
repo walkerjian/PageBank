@@ -16,6 +16,10 @@ RUN pip install --no-cache-dir --upgrade pip \
                   scikit-learn==1.3.2 \
                   networkx \
                   python-dotenv \
-                  openai
+                  openai \
+                  beautifulsoup4 \
+                  requests \
+                  huggingface_hub==0.19.4
+
 
 CMD ["python", "run_demo.py"]
