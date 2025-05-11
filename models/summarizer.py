@@ -7,8 +7,8 @@ def summarize_text(text):
         model="gpt-4",
         messages=[
             {"role": "system", "content": "You are a helpful summarizer."},
-            {"role": "user", "content": f"Summarize this:
-{text}"}
+            {"role": "user", "content": f"Summarize this:\n{text}"}
         ]
     )
     return response['choices'][0]['message']['content']
+
