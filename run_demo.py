@@ -24,4 +24,7 @@ for doc, score in results:
 print("\nSummarization:")
 for url in page_texts[:1]:
     print(f"{url}:")
-    print(summarize_text(url))
+    print(summarize_text(pages[url]))
+
+summary = summarize_text(pages[url])
+print(f"Summary of {url}:\n{summary}\n")
