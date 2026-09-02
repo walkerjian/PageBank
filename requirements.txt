@@ -8,9 +8,9 @@ python-dotenv
 
 # AI + NLP stack
 torch==2.2.2
-transformers==4.35.2
-sentence-transformers==2.2.2
-huggingface_hub==0.19.4
+transformers>=4.38.0
+sentence-transformers>=3.0.0
+huggingface_hub>=0.20.0
 openai
 
 # Optional: if you're using headless browser automation later
